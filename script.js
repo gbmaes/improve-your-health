@@ -1,9 +1,14 @@
 function calculate() {
-    var txtw = window.document.getElementById('txtweight')    //men =88.362 + (13.397 x weight in kg) + (4.799 x height in cm) – (5.677 x age in years)
-    var txth = window.document.getElementById('txtheight')    // woman = 447.593 + (9.247 x weight in kg) + (3.098 x height in cm) – (4.330 x age in years)
+    var txtw = window.document.getElementById('txtweight')    
+    var txth = window.document.getElementById('txtheight')    
     var txta = window.document.getElementById('txtage')
     var r = window.document.getElementById('txtres')
     var fsex = document.getElementsByName('radsex')
+
+    if (txtw.value == 0 || txth.value == 0 || txta.value == 0) {
+        alert('Please verify your information.')
+        return total = ''
+    }
     
     if (fsex[0].checked) { //man
         
@@ -35,16 +40,16 @@ img.setAttribute('id', 'foto')
 
         
     } else if (sports === 'running') { 
-        r.innerHTML = 'You chose Running'
+        r.innerHTML = 'You chose running'
         img.src = 'running.jpeg'
     } else if (sports === 'swimming'){
-        r.innerHTML = 'You chose Swimming'
+        r.innerHTML = 'You chose swimming'
         img.src = 'swimming.jpeg'
     } else if (sports === 'walking'){
-        r.innerHTML = 'You chose Walking'
+        r.innerHTML = 'You chose walking'
         img.src = 'walking.jpeg'
     } else if (sports === 'weightlifting'){
-        r.innerHTML = 'You chose Weight Lifting'
+        r.innerHTML = 'You chose weight lifting'
         img.src = 'weightlifting.jpeg'
     } else {
         r.innerHTML = 'You did not chose any exercise'
@@ -56,3 +61,4 @@ img.setAttribute('id', 'foto')
     
 
 } 
+
