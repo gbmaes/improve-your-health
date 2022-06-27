@@ -10,29 +10,48 @@
 </head>
 
 
-<body>
+<body id="bdy">
+    <header>
     <h1>Improve Your Healt</h1><br>
+    </header>
 
-    <section id="secstyle">
+    <section>
         <h2>1- Basal Metabolic Rate Calculator:</h2>
     <div><br>
-    Type here your gender: <input type="radio" name="radsex" id="mas" checked>
+    Select your gender: <input type="radio" name="radsex" id="mas" checked>
     <label for="mas">Man</label>
     <input type="radio" name="radsex" id="fem">
-    <label for="fem">Woman</label> <br>
-    Type here your weight (kg): <input type="number" name="" id="txtweight"> <br>
-    Type here your height (cm): <input type="number" name="" id="txtheight"> <br>
-    Type here your age (years): <input type="number" name="" id="txtage"> 
-    <input type="button" value="calculate" id="txtres" onclick="calculate()"> <br>
-    Press "calculate" to view your BMR
+    <label for="fem">Woman</label> <br> <br>
+    Type below your weight (kg): <input type="number" name="" id="txtweight"> <br>
+    Type below your height (cm): <input type="number" name="" id="txtheight"> <br>
+    Type below your age (years): <input type="number" name="" id="txtage"> 
+    <input type="button" value="calculate" onclick="calculate()"> <br>
+    <div id="txtres"> Press "calculate" to view your BMR </div>
 
-    </div><br>
-    <h2>2- Favorite Sport:</h2>
-    <div>
+    
 
-    </div><br>
+    <h2><label for="sports">Select your favorite sport:</label></h2>
+    <select name="sports" id="sports"> 
+        <option type="radio" value="cycling">Cycling</option>
+        <option type="radio" value="running">Running</option>
+        <option type="radio" value="swimming">Swimming</option>
+        <option type="radio" value="walking">Walking</option>
+        <option type="radio" value="weightlifting">Weight lifting</option>
+        <option value="">None</option>
+      </select>
+      <input type="button" value="submit" onclick="check()">
+      <div id="sportsres"></div>
+    
+    
+    
 
-    <h2>3- Goal:</h2>
+    <h2>3- Goal:<label for="goal">Select your current goal:</label></h2>
+    <select name="goal" id="goal"> 
+        <option type="radio" value="lose-fat">Lose Fat</option>
+        <option type="radio" value="gain-muscle">Gain Muscle</option>
+        <option type="radio" value="maintain weight">Maintain Weight</option>
+      </select>
+      <input type="button" value="Verify" onclick="submit()">
     <div>
 
     </div><br>
