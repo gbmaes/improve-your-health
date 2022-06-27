@@ -1,3 +1,40 @@
-#secstyle {
-    font-size: 33px;
+section {
+    font-size: 30px;
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 3px 3px 10px black;
+    
+
+}
+
+
+.body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: rgb(48, 96, 238);
+}
+
+header  {
+    font-size: 40px;
+    color: white;
+    text-align: center;
+}
+
+#txtres {
+    font-size: 20px;
+}
+
+#sportsres {
+    font-size: 20px;
+    text-align: center;
+    padding: 8px;
+}
+
+#foto {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    padding: 8px;
 }
