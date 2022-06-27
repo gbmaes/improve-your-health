@@ -23,13 +23,18 @@ header  {
 }
 
 #txtres {
-    font-size: 20px;
+    font-size: 17px;
+    text-align: inherit;
 }
 
 #sportsres {
     font-size: 20px;
-    text-align: center;
-    padding: 8px;
+    text-align: justify;
+    width: 150px;
+    
+    padding: 20px;
+    position: inherit; 
+   
 }
 
 #foto {
@@ -37,4 +42,7 @@ header  {
     width: 150px;
     height: 150px;
     padding: 8px;
+    display: block;
+    margin: 0 auto;
 }
+
