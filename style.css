@@ -7,27 +7,36 @@ section {
     margin: auto;
     box-shadow: 3px 3px 10px black;
     
-
 }
 
 
-.body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background: rgb(48, 96, 238);
-}
+
 
 header  {
     font-size: 40px;
     color: white;
     text-align: center;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 #txtres {
     font-size: 17px;
     text-align: inherit;
+    
+    
 }
 
 #sportsres {
+    font-size: 20px;
+    text-align: justify;
+    width: 150px;
+    
+    padding: 20px;
+    position: inherit; 
+   
+}
+
+#goalres {
     font-size: 20px;
     text-align: justify;
     width: 150px;
@@ -46,3 +55,22 @@ header  {
     margin: 0 auto;
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    background-color: rgb(121, 124, 133);
+    
+}
+
+
+
+#footer {
+    background-color: #f7f7f7;
+    color: #999999;
+    padding: 4.5em 0 2.5em 0 ;
+    color: #b0b0b0;
+    text-align: center;
+}
