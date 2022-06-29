@@ -8,15 +8,18 @@ function calculate() {
     const fsex = document.getElementsByName('radsex')
     
     if (weight == 0 || height == 0 || age == 0) {
-        alert('Please verify your information.') 
+        alert('Please verify your information.')
+        r.innerHTML = '' 
     }
-    if (fsex[0].checked) { //man  
+    else if (fsex[0].checked) { //man  
         total = 88.362 + (13.397 * Number(weight)) + (4.799 * Number(height)) - (5.677 * Number(age))
+        r.innerHTML = `Your Basal Metabolic Rate is: ${total.toFixed(2)} kcal.`
     }
     else if (fsex[1].checked) { //woman
         total = 447.593 + (9.247 * Number(weight)) + (3.098 * Number(height)) - (4.330 * Number(age))
+        r.innerHTML = `Your Basal Metabolic Rate is: ${total.toFixed(2)} kcal.`
     }
-    r.innerHTML = `Your Basal Metabolic Rate is: ${total.toFixed(2)} kcal.`
+    
 }
 
 var bike = false
@@ -63,18 +66,18 @@ function check() {
 
 var goalLoseWeight = false
 
+
 function submit() {
     var goal = window.document.getElementById('txtgoal').value
     var r3 = window.document.getElementById('goalres')
     var img2 = document.createElement('img')
     img2.setAttribute('id', 'foto')
-
+ 
     if (goal === 'lose-weight') {
         goalLoseWeight = true
         r3.innerHTML = 'You chose lose weight.'
         img2.src = 'lose-fat.jpg'
     } else {
-        goalLoseWeight = false
         r3.innerHTML = 'You chose gain weight.'
         img2.src = 'lose-fat.jpg'
     }
@@ -84,10 +87,83 @@ function submit() {
     
 function verify() {
     var r4 = window.document.getElementById('hoursres')
-    if (total > 1800 && run && goalLoseWeight) {
-        r4.innerHTML = 'you should exercise blablabla'
-    } else {
-        r4.innerHTML = 'opa'
+    // first condition
+    if (total < 1500 && bike && goalLoseWeight) {
+        r4.innerHTML = 'You should eat around 1750 kcal and pedal at least 3,5h/week.'
+    } else if (total < 1500 && run && goalLoseWeight) {
+        r4.innerHTML = 'You should eat around 1800 kcal and run at least 6h/week.'
+    } else if (total < 1500 && swim && goalLoseWeight) {
+        r4.innerHTML = 'You should eat around 1900 kcal and swim at least 4h/week.'
+    } else if (total < 1500 && walk && goalLoseWeight) {
+        r4.innerHTML = 'You should eat around 1700 kcal and walk at least 6h/week.'
+    } else if (total < 1500 && wl && goalLoseWeight) {
+        r4.innerHTML = 'You should eat around 1850 kcal and lift at least 4h/week.'
+    } else if (total < 1500 && lazy && goalLoseWeight) {
+        r4.innerHTML = 'You should eat around 1400 kcal.'
+    // second condition
+    } else if (total < 1500 && bike) {
+        r4.innerHTML = 'You should eat around 1850 kcal and pedal at least 2,5h/week.'
+    } else if (total < 1500 && run) {
+        r4.innerHTML = 'You should eat around 1900 kcal and run at least 5h/week.'
+    } else if (total < 1500 && swim) {
+        r4.innerHTML = 'You should eat around 2000 kcal and swim at least 3h/week.'
+    } else if (total < 1500 && walk) {
+        r4.innerHTML = 'You should eat around 1800 kcal and walk at least 5h/week.'
+    } else if (total < 1500 && wl) {
+        r4.innerHTML = 'You should eat around 1950 kcal and lift at least 3h/week.'
+    } else if (total < 1500 && lazy) {
+        r4.innerHTML = 'You should eat around 1700 kcal.'
+    // third condition
+    } else if (total >= 1500 && total < 1800 && bike && goalLoseWeight ) {
+        r4.innerHTML = 'You should eat around 1950 kcal and pedal at least 3,5h/week.'
+    } else if (total >= 1500 && total < 1800 && run && goalLoseWeight) {
+        r4.innerHTML = 'You should eat around 2000kcal and run at least 6h/week.'
+    } else if (total >= 1500 && total < 1800 && swim && goalLoseWeight) {
+        r4.innerHTML = 'You should eat around 2000kcal and swim at least 4h/week.'
+    } else if (total >= 1500 && total < 1800 && walk && goalLoseWeight) {
+        r4.innerHTML = 'You should eat around 1900kcal and walk at least 6h/week.'
+    } else if (total >= 1500 && total < 1800 && wl && goalLoseWeight) {
+        r4.innerHTML = 'You should eat around 1950kcal and lift at least 4h/week.'
+    } else if (total >= 1500 && total < 1800 && lazy && goalLoseWeight) {
+        r4.innerHTML = 'You should eat around 1600kcal.'
+    // fourth condition
+    } else if (total >= 1500 && total < 1800 && bike) {
+    r4.innerHTML = 'You should eat around 1950 kcal and pedal at least 2h/week.'
+    } else if (total >= 1500 && total < 1800 && run) {
+        r4.innerHTML = 'You should eat around 2000 kcal and run at least 4,5h/week.'
+    } else if (total >= 1500 && total < 1800 && swim) {
+        r4.innerHTML = 'You should eat around 2000 kcal and swim at least 3h/week.'
+    } else if (total >= 1500 && total < 1800 && walk) {
+        r4.innerHTML = 'You should eat around 1900 kcal and walk at least 4h/week.'
+    } else if (total >= 1500 && total < 1800 && wl) {
+        r4.innerHTML = 'You should eat around 1950 kcal and lift at least 3h/week.'
+    } else if (total >= 1500 && total < 1800 && lazy) {
+        r4.innerHTML = 'You should eat around 1850 kcal.'
+    // fifth condition
+    } else if (total >= 1800 && bike && goalLoseWeight ) {
+        r4.innerHTML = 'You should eat around 1900 kcal and pedal at least 2h/week.'
+    } else if (total >= 1800 && run && goalLoseWeight) {
+            r4.innerHTML = 'You should eat around 2000 kcal and run at least 2,5h/week.'
+    } else if (total >= 1800 && swim && goalLoseWeight) {
+            r4.innerHTML = 'You should eat around 2100 kcal and swim at least 2,5h/week.'
+    } else if (total >= 1800 && walk && goalLoseWeight) {
+            r4.innerHTML = 'You should eat around 1900 kcal and walk at least 3,5h/week.'
+    } else if (total >= 1800 && wl && goalLoseWeight) {
+            r4.innerHTML = 'You should eat around 2150 kcal and lift at least 3h/week.'
+    } else if (total >= 1800 && lazy && goalLoseWeight) {
+            r4.innerHTML = 'You should eat around 1800 kcal.'
+    // sixth condition
+    } else if (total >= 1800 && bike ) {
+        r4.innerHTML = 'You should eat around 2100 kcal and pedal at least 1h/week.'
+    } else if (total >= 1800 && run) {
+            r4.innerHTML = 'You should eat around 2200 kcal and run at least 2h/week.'
+    } else if (total >= 1800 && swim) {
+            r4.innerHTML = 'You should eat around 2300 kcal and swim at least 2h/week.'
+    } else if (total >= 1800 && walk) {
+            r4.innerHTML = 'You should eat around 2000 kcal and walk at least 2,5h/week.'
+    } else if (total >= 1800 && wl) {
+            r4.innerHTML = 'You should eat around 2250 kcal and lift at least 4h/week.'
+    } else if (total >= 1800 && lazy) {
+            r4.innerHTML = 'You should eat around 1900 kcal.'
     }
-    
 }
