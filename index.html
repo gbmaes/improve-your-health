@@ -6,17 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Improve Your Health</title>
     <link rel="stylesheet" href="style.css">
-    
 </head>
-
 
 <body id="bdy">
   <main class="container">
     <header>
-    <h1>Improve Your Healt</h1><br>
+    <h1>Improve Your Health</h1><br>
     </header>
     <section>
-    <div class="bloco-1">
+    <div id="" class="">
     <h2>Basal Metabolic Rate Calculator:</h2>
     <br>
     Select your gender: <input type="radio" name="radsex" id="mas" checked>
@@ -26,12 +24,11 @@
     Type below your weight (kg): <input type="number" name="" id="txtweight"> <br>
     Type below your height (cm): <input type="number" name="" id="txtheight"> <br>
     Type below your age (years): <input type="number" name="" id="txtage"> 
-    <p><input type="button" value="Calculate" onclick="calculate()"></p>
+    <p><input id="form" type="button" value="Calculate" onclick="calculate()"></p>
     <div id="txtres"> <!-- Press "calculate" to view your BMR --> </div>
     </div>
-
     
-    <div class="bloco-2">
+    <div id="" class="">
     <h2><label for="sports">Select your favorite sport:</label></h2>
     <select name="sports" id="txtsports"> 
         <option type="radio" value="cycling">Cycling</option>
@@ -41,28 +38,35 @@
         <option type="radio" value="weightlifting">Weight lifting</option>
         <option value="">None</option>
     </select>
-    <input type="button" value="Submit" onclick="check()">
+    <input id="form" type="button" value="Submit" onclick="check()">
     <div id="sportsres"></div>
   </div>
     
-    
-    
-    <div class="bloco-3">
+    <vid id="" class="">
     <h2><label for="goal">Select your current goal:</label></h2>
     <select name="goal" id="txtgoal"> 
         <option type="radio" value="lose-weight">Lose Weight</option>
         <option type="radio" value="gain-weight">Gain Weight</option>
-      </select>
-      <input type="button" value="Submit" onclick="submit()">
+    </select>
+      <input id="form" type="button" value="Submit" onclick="submit()">
       <div id="goalres"></div>
-    </div>
+  </div>
 
-    <div class="bloco-4">
-    <h2>How many hours per week you should exercise:</h2>
-    <input type="button" value="Submit" onclick="verify()">
-    <div id="hoursres">oi</div>
+    <div id="" class="">
+      <h2>How many kcal/day you should eat and how many hours/week you should exercise:</h2>
+      <input id="form" type="button" value="Submit" onclick="verify()">
+      <div id="hoursres"></div>
     </div>
+  <!--<div>
+    <input type="reset" id="reset" value="Reset and try again" onclick="reset()">
+  </div>-->
+    <script src="/script.js"></script>
+  </section>
+</main>
 
-    <div class="bloco-5">
-    <h2>How many calories per day you should eat:</h2>
-    </div>
+<footer id="footer">
+  Developed by Gabriel Maes
+  <p class="copyright">&copy; 2022 Gabriel Maes All Rights Reserved</p>
+</footer>
+</body>
+</html>
