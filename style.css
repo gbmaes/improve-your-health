@@ -7,7 +7,6 @@ section {
     width: 500px;
     margin: auto;
     box-shadow: 3px 3px 10px black;
-    
 }
 
 header  {
@@ -15,18 +14,22 @@ header  {
     color: white;
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    
-    
+}
+
+h2 {
+    font-size: 20px;
 }
 
 #txtres {
-    font-size: 17px;
-    text-align: inherit;
-
+    font-size: 15px;
+    text-align: justify;
+    width: 150px;
+    padding: 20px;
+    position: inherit; 
 }
 
 #sportsres {
-    font-size: 20px;
+    font-size: 15px;
     text-align: justify;
     width: 150px;
     padding: 20px;
@@ -35,12 +38,19 @@ header  {
 }
 
 #goalres {
-    font-size: 20px;
+    font-size: 15px;
     text-align: justify;
     width: 150px;
     padding: 20px;
+    position: inherit;   
+}
+
+#hoursres {
+    font-size: 15px;
+    text-align: center;
+    width: 150px;
+    padding: 20px;
     position: inherit; 
-   
 }
 
 #foto {
@@ -58,8 +68,7 @@ header  {
     justify-content: center;
     align-items: center;
     flex-wrap: nowrap;
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,101,9,1) 35%, rgba(0,212,255,1) 100%);
-    
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,101,9,1) 35%, rgba(0,212,255,1) 100%);  
 }
 
 #footer {
@@ -69,4 +78,24 @@ header  {
     padding: 4.5em 0 2.5em 0 ;
     color: #b0b0b0;
     text-align: center;
+}
+
+input[type=number] {
+    padding:5px; 
+    border:2px solid #ccc; 
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+input[type=number]:focus {
+    border-color:#333;
+}
+
+input[type=button] {
+    padding:5px 15px; 
+    background:#ccc; 
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
 }
