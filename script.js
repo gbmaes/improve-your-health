@@ -89,81 +89,82 @@ function verify() {
     var r4 = window.document.getElementById('hoursres')
     // first condition
     if (total < 1500 && bike && goalLoseWeight) {
-        r4.innerHTML = 'You should eat around 1750 kcal and pedal at least 3,5h/week.'
+        r4.innerHTML = 'You should eat around 1750 kcal/day and pedal at least 3,5h/week.'
     } else if (total < 1500 && run && goalLoseWeight) {
-        r4.innerHTML = 'You should eat around 1800 kcal and run at least 6h/week.'
+        r4.innerHTML = 'You should eat around 1800 kcal/day and run at least 6h/week.'
     } else if (total < 1500 && swim && goalLoseWeight) {
-        r4.innerHTML = 'You should eat around 1900 kcal and swim at least 4h/week.'
+        r4.innerHTML = 'You should eat around 1900 kcal/day and swim at least 4h/week.'
     } else if (total < 1500 && walk && goalLoseWeight) {
-        r4.innerHTML = 'You should eat around 1700 kcal and walk at least 6h/week.'
+        r4.innerHTML = 'You should eat around 1700 kcal/day and walk at least 6h/week.'
     } else if (total < 1500 && wl && goalLoseWeight) {
-        r4.innerHTML = 'You should eat around 1850 kcal and lift at least 4h/week.'
+        r4.innerHTML = 'You should eat around 1850 kcal/day and lift at least 4h/week.'
     } else if (total < 1500 && lazy && goalLoseWeight) {
-        r4.innerHTML = 'You should eat around 1400 kcal.'
+        r4.innerHTML = 'You should eat around 1400 kcal/day.'
     // second condition
     } else if (total < 1500 && bike) {
-        r4.innerHTML = 'You should eat around 1850 kcal and pedal at least 2,5h/week.'
+        r4.innerHTML = 'You should eat around 1850 kcal/day and pedal at least 2,5h/week.'
     } else if (total < 1500 && run) {
-        r4.innerHTML = 'You should eat around 1900 kcal and run at least 5h/week.'
+        r4.innerHTML = 'You should eat around 1900 kcal/day and run at least 5h/week.'
     } else if (total < 1500 && swim) {
-        r4.innerHTML = 'You should eat around 2000 kcal and swim at least 3h/week.'
+        r4.innerHTML = 'You should eat around 2000 kcal/day and swim at least 3h/week.'
     } else if (total < 1500 && walk) {
-        r4.innerHTML = 'You should eat around 1800 kcal and walk at least 5h/week.'
+        r4.innerHTML = 'You should eat around 1800 kcal/day and walk at least 5h/week.'
     } else if (total < 1500 && wl) {
-        r4.innerHTML = 'You should eat around 1950 kcal and lift at least 3h/week.'
+        r4.innerHTML = 'You should eat around 1950 kcal/day and lift at least 3h/week.'
     } else if (total < 1500 && lazy) {
-        r4.innerHTML = 'You should eat around 1700 kcal.'
+        r4.innerHTML = 'You should eat around 1700 kcal/day.'
     // third condition
     } else if (total >= 1500 && total < 1800 && bike && goalLoseWeight ) {
-        r4.innerHTML = 'You should eat around 1950 kcal and pedal at least 3,5h/week.'
+        r4.innerHTML = 'You should eat around 1950 kcal/day and pedal at least 3,5h/week.'
     } else if (total >= 1500 && total < 1800 && run && goalLoseWeight) {
-        r4.innerHTML = 'You should eat around 2000kcal and run at least 6h/week.'
+        r4.innerHTML = 'You should eat around 2000kcal/day and run at least 6h/week.'
     } else if (total >= 1500 && total < 1800 && swim && goalLoseWeight) {
-        r4.innerHTML = 'You should eat around 2000kcal and swim at least 4h/week.'
+        r4.innerHTML = 'You should eat around 2000kcal/day and swim at least 4h/week.'
     } else if (total >= 1500 && total < 1800 && walk && goalLoseWeight) {
-        r4.innerHTML = 'You should eat around 1900kcal and walk at least 6h/week.'
+        r4.innerHTML = 'You should eat around 1900kcal/day and walk at least 6h/week.'
     } else if (total >= 1500 && total < 1800 && wl && goalLoseWeight) {
-        r4.innerHTML = 'You should eat around 1950kcal and lift at least 4h/week.'
+        r4.innerHTML = 'You should eat around 1950kcal/day and lift at least 4h/week.'
     } else if (total >= 1500 && total < 1800 && lazy && goalLoseWeight) {
-        r4.innerHTML = 'You should eat around 1600kcal.'
+        r4.innerHTML = 'You should eat around 1600kcal/day.'
     // fourth condition
     } else if (total >= 1500 && total < 1800 && bike) {
-    r4.innerHTML = 'You should eat around 1950 kcal and pedal at least 2h/week.'
+    r4.innerHTML = 'You should eat around 1950 kcal/day and pedal at least 2h/week.'
     } else if (total >= 1500 && total < 1800 && run) {
-        r4.innerHTML = 'You should eat around 2000 kcal and run at least 4,5h/week.'
+        r4.innerHTML = 'You should eat around 2000 kcal/day and run at least 4,5h/week.'
     } else if (total >= 1500 && total < 1800 && swim) {
-        r4.innerHTML = 'You should eat around 2000 kcal and swim at least 3h/week.'
+        r4.innerHTML = 'You should eat around 2000 kcal/day and swim at least 3h/week.'
     } else if (total >= 1500 && total < 1800 && walk) {
-        r4.innerHTML = 'You should eat around 1900 kcal and walk at least 4h/week.'
+        r4.innerHTML = 'You should eat around 1900 kcal/day and walk at least 4h/week.'
     } else if (total >= 1500 && total < 1800 && wl) {
-        r4.innerHTML = 'You should eat around 1950 kcal and lift at least 3h/week.'
+        r4.innerHTML = 'You should eat around 1950 kcal/day and lift at least 3h/week.'
     } else if (total >= 1500 && total < 1800 && lazy) {
-        r4.innerHTML = 'You should eat around 1850 kcal.'
+        r4.innerHTML = 'You should eat around 1850 kcal/day.'
     // fifth condition
     } else if (total >= 1800 && bike && goalLoseWeight ) {
-        r4.innerHTML = 'You should eat around 1900 kcal and pedal at least 2h/week.'
+        r4.innerHTML = 'You should eat around 1900 kcal/day and pedal at least 2h/week.'
     } else if (total >= 1800 && run && goalLoseWeight) {
-            r4.innerHTML = 'You should eat around 2000 kcal and run at least 2,5h/week.'
+            r4.innerHTML = 'You should eat around 2000 kcal/day and run at least 2,5h/week.'
     } else if (total >= 1800 && swim && goalLoseWeight) {
-            r4.innerHTML = 'You should eat around 2100 kcal and swim at least 2,5h/week.'
+            r4.innerHTML = 'You should eat around 2100 kcal/day and swim at least 2,5h/week.'
     } else if (total >= 1800 && walk && goalLoseWeight) {
-            r4.innerHTML = 'You should eat around 1900 kcal and walk at least 3,5h/week.'
+            r4.innerHTML = 'You should eat around 1900 kcal/day and walk at least 3,5h/week.'
     } else if (total >= 1800 && wl && goalLoseWeight) {
-            r4.innerHTML = 'You should eat around 2150 kcal and lift at least 3h/week.'
+            r4.innerHTML = 'You should eat around 2150 kcal/day and lift at least 3h/week.'
     } else if (total >= 1800 && lazy && goalLoseWeight) {
-            r4.innerHTML = 'You should eat around 1800 kcal.'
+            r4.innerHTML = 'You should eat around 1800 kcal/day.'
     // sixth condition
     } else if (total >= 1800 && bike ) {
-        r4.innerHTML = 'You should eat around 2100 kcal and pedal at least 1h/week.'
+        r4.innerHTML = 'You should eat around 2100 kcal/day and pedal at least 1h/week.'
     } else if (total >= 1800 && run) {
-            r4.innerHTML = 'You should eat around 2200 kcal and run at least 2h/week.'
+            r4.innerHTML = 'You should eat around 2200 kcal/day and run at least 2h/week.'
     } else if (total >= 1800 && swim) {
-            r4.innerHTML = 'You should eat around 2300 kcal and swim at least 2h/week.'
+            r4.innerHTML = 'You should eat around 2300 kcal/day and swim at least 2h/week.'
     } else if (total >= 1800 && walk) {
-            r4.innerHTML = 'You should eat around 2000 kcal and walk at least 2,5h/week.'
+            r4.innerHTML = 'You should eat around 2000 kcal/day and walk at least 2,5h/week.'
     } else if (total >= 1800 && wl) {
-            r4.innerHTML = 'You should eat around 2250 kcal and lift at least 4h/week.'
+            r4.innerHTML = 'You should eat around 2250 kcal/day and lift at least 4h/week.'
     } else if (total >= 1800 && lazy) {
-            r4.innerHTML = 'You should eat around 1900 kcal.'
+            r4.innerHTML = 'You should eat around 1900 kcal/day.'
     }
 }
+
