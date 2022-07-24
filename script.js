@@ -66,7 +66,6 @@ function check() {
 
 var goalLoseWeight = false
 
-
 function submit() {
     var goal = window.document.getElementById('txtgoal').value
     var r3 = window.document.getElementById('goalres')
@@ -167,4 +166,3 @@ function verify() {
             r4.innerHTML = 'You should eat around 1900 kcal/day.'
     }
 }
-
