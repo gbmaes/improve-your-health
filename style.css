@@ -61,7 +61,6 @@ h2 {
     display: block;
     margin: 0 auto;
 }
-
 .container {
     display: flex;
     flex-direction: column;
@@ -70,7 +69,6 @@ h2 {
     flex-wrap: nowrap;
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,101,9,1) 35%, rgba(0,212,255,1) 100%);  
 }
-
 #footer {
     background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,101,9,1) 35%, rgba(0,212,255,1) 100%);
@@ -90,7 +88,6 @@ input[type=number] {
 input[type=number]:focus {
     border-color:#333;
 }
-
 input[type=button] {
     padding:5px 15px; 
     background:#ccc; 
