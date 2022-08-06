@@ -64,7 +64,6 @@ function check() {
 }
 
 var goalLoseWeight = false
-
 function submit() {
     var goal = window.document.getElementById('txtgoal').value
     var r3 = window.document.getElementById('goalres')
