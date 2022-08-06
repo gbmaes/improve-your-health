@@ -1,5 +1,4 @@
 var total = 0
-
 function calculate() {
     const weight = window.document.getElementById('txtweight').value    
     const height = window.document.getElementById('txtheight').value
