@@ -30,10 +30,10 @@ var wl = false
 var lazy = false
 
 function check() {
-    var sports = window.document.getElementById('txtsports').value
-    var r2 = window.document.getElementById('sportsres')
-    var img = document.createElement('img')
-    img.setAttribute('id', 'foto')
+    var sports = window.document.getElementById('txtsports').value;
+    var r2 = window.document.getElementById('sportsres');
+    var img = document.createElement('img');
+    img.setAttribute('id', 'foto');
     
     if (sports === 'cycling') {
         bike = true
