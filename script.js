@@ -1,10 +1,10 @@
 var total = 0
 function calculate() {
-    const weight = window.document.getElementById('txtweight').value    
-    const height = window.document.getElementById('txtheight').value
-    const age =  window.document.getElementById('txtage').value   
-    const r = window.document.getElementById('txtres')
-    const fsex = document.getElementsByName('radsex')
+    const weight = window.document.getElementById('txtweight').value;
+    const height = window.document.getElementById('txtheight').value;
+    const age =  window.document.getElementById('txtage').value;
+    const r = window.document.getElementById('txtres');
+    const fsex = document.getElementsByName('radsex');
     
     if (weight == 0 || height == 0 || age == 0) {
         alert('Please verify your information.')
